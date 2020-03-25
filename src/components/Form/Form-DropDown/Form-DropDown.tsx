@@ -26,7 +26,7 @@ const FormDropDown: React.FC<Props> = (props: Props) => {
                 id={props.id}
                 className="Input-field Dropdown">
 
-                <DropDownItems disabled={true} value={props.initialValue}/>
+                <DropDownItems disabled={true} value={props.initialValue} />
 
                 {props.dropDownList.map((data) => {
                     return (<DropDownItems disabled={false} value={data}/>);

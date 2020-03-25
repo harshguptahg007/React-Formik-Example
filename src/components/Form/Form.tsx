@@ -1,5 +1,5 @@
 import React from "react";
-import {ErrorMessage, Field, Formik} from "formik";
+import {ErrorMessage, Formik} from "formik";
 import "./Form.css";
 import * as Yup from 'yup';
 import FormCheckbox from "./Form-Checkbox/Form-Checkbox";

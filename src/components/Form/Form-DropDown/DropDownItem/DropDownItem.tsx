@@ -11,7 +11,7 @@ const DropDownItems: React.FC<Props> = (props: Props) => {
         <option
             disabled={props.disabled}
             value={props.disabled ? "" : props.value}
-            className={"Dropdown-option" + !props.disabled ? "color-black" : ""}>
+            className={"Dropdown-option" + !props.disabled ? "color-black": ""}>
             {props.value}
         </option>
     );

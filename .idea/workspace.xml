@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93706174-c4af-4324-8584-fab93ccb5573" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-Checkbox/Form-Checkbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-Checkbox/Form-Checkbox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-DropDown/DropDownItem/DropDownItem.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-DropDown/DropDownItem/DropDownItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-DropDown/Form-DropDown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-DropDown/Form-DropDown.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-Number/Form-Number.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-Radio/Form-Radio.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-Radio/Form-Radio.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-Text/Form-Text.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-TextArea/Form-TextArea.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Form/Form-TextArea/Form-TextArea.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/Form-DropDown/DropDownItem/DropDownItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/Form-DropDown/DropDownItem/DropDownItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/Form-DropDown/Form-DropDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/Form-DropDown/Form-DropDown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/Form-TextArea/Form-TextArea.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/Form-TextArea/Form-TextArea.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Form/Form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/Form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Form/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/Form.tsx" afterDir="false" />
     </list>
@@ -93,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585118809058</updated>
-      <workItem from="1585118820824" duration="24651000" />
+      <workItem from="1585118820824" duration="26002000" />
     </task>
     <servers />
   </component>

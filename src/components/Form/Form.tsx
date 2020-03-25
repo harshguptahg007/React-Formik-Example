@@ -14,7 +14,7 @@ interface Props {
 
 const Form: React.FC<Props> = (props: Props) => {
     return (
-        <div className="Card">
+        <div>
             <Formik
                 initialValues={{
                     name: "",
@@ -54,7 +54,7 @@ const Form: React.FC<Props> = (props: Props) => {
                 }}>
                 {formikProps => {
                     return (
-                        <form onSubmit={formikProps.handleSubmit} onReset={formikProps.handleReset}>
+                        <form className="Card" onSubmit={formikProps.handleSubmit} onReset={formikProps.handleReset}>
                             <div className="Entry-field">
 
                                 <FormText label="Name" name="name" placeholder="Enter your Name" id="name"/>

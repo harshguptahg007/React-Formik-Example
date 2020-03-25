@@ -1,0 +1,39 @@
+.Field-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: #eee;
+}
+
+.checkbox-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.Field-checkbox:checked ~ .checkbox-mark:after {
+    display: block;
+}
+
+.radio-checkbox-option .checkbox-mark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid rgba(0, 0, 0, 0.6);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

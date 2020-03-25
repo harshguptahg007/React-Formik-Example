@@ -1,7 +1,7 @@
 .Card {
     margin: 5rem 0;
     border-radius: 5px;
-    background-color: rgba(42,16,70,0.8);
+    background-color: rgba(42, 16, 70, 0.8);
     width: 80rem;
     display: flex;
     flex-direction: column;
@@ -28,20 +28,7 @@
     border-radius: 5px;
     font-size: 1.65rem;
     border: 1px solid #eeeeee;
-    color: rgba(0,0,0,0.6);
-}
-
-.Dropdown {
-    background-color: white;
-}
-
-.Dropdown-option {
-    min-height: 2.5rem;
-    font-size: 1.8rem;
-}
-
-.color-black {
-    color: black;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .Radio-container {
@@ -51,15 +38,16 @@
     margin-bottom: 1rem;
 }
 
-.radio-option {
-    margin-left: 1rem;
-}
-
-.Textarea {
-    padding: 8px;
-    font-size: 1.8rem;
-    border: 1px solid #eeeeee;
-    color: rgba(0,0,0,0.6);
+.radio-checkbox-option {
+    display: block;
+    position: relative;
+    padding-left: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .Error-message {

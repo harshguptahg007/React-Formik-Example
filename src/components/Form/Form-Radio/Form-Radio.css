@@ -1,0 +1,37 @@
+.Field-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.Field-radio:checked ~ .radio-mark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-checkbox-option .radio-mark:after {
+    top: 5px;
+    left: 5px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+}

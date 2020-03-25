@@ -2,7 +2,7 @@
     margin: 5rem 0;
     border-radius: 5px;
     background-color: rgba(42, 16, 70, 0.8);
-    max-width: 80rem;
+    /*max-width: 80rem;*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -22,7 +22,7 @@
 }
 
 .Input-field {
-    width: 70rem;
+    width: 100%;
     height: 4rem;
     padding: 8px;
     border-radius: 5px;
@@ -61,7 +61,7 @@
 }
 
 .btn-submit {
-    width: 70rem;
+    width: 100%;
     padding: 1rem 0;
     font-size: 1.8rem;
     color: white;

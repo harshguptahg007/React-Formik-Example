@@ -12,7 +12,7 @@ interface Props {
 
 const FormTextArea: React.FC<Props> = (props: Props) => {
     return (
-        <div>
+        <>
             <label className="heading" htmlFor={props.id}>{props.label}</label>
             <Field
                 component="textarea"
@@ -23,7 +23,7 @@ const FormTextArea: React.FC<Props> = (props: Props) => {
                 id={props.id}
                 className="Textarea"
             />
-        </div>
+        </>
     );
 };
 

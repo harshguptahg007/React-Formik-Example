@@ -14,7 +14,7 @@ interface Props {
 
 const FormDropDown: React.FC<Props> = (props: Props) => {
     return (
-        <div>
+        <>
             <label
                 className="heading"
                 htmlFor={props.id}>
@@ -33,7 +33,7 @@ const FormDropDown: React.FC<Props> = (props: Props) => {
                 })}
 
             </Field>
-        </div>
+        </>
     );
 };
 

@@ -11,7 +11,7 @@ interface Props {
 
 const FormNumber: React.FC<Props> = (props: Props) => {
     return (
-        <div>
+        <>
             <label className="heading" htmlFor="name">{props.label}</label>
             <Field
                 type="number"
@@ -20,7 +20,7 @@ const FormNumber: React.FC<Props> = (props: Props) => {
                 id={props.id}
                 className="Input-field"
             />
-        </div>
+        </>
     );
 };
 

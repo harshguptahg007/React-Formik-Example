@@ -1,0 +1,60 @@
+.Card {
+    margin: 5rem 0;
+    border-radius: 5px;
+    background-color: rgba(42,16,70,0.8);
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem 5rem 7rem 5rem;
+}
+
+.Entry-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.Input-field {
+    width: 70rem;
+    height: 4rem;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1.65rem;
+    border: 1px solid #eeeeee;
+    color: rgba(0,0,0,0.6);
+}
+
+.Dropdown {
+    background-color: white;
+}
+
+.Dropdown-option {
+    min-height: 2.5rem;
+    font-size: 1.8rem;
+}
+
+.color-black {
+    color: black;
+}
+
+.Radio-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.radio-option {
+    margin-left: 1rem;
+}
+
+.Textarea {
+
+}

@@ -1,6 +1,7 @@
 import React from "react";
-import {Field, Formik} from "formik";
+import {ErrorMessage, Field, Formik} from "formik";
 import "./Form.css";
+import * as Yup from 'yup';
 
 interface Props {
 }
@@ -19,15 +20,38 @@ const Form: React.FC<Props> = (props: Props) => {
                     improved: "",
                     comments: "",
                 }}
+                validationSchema={
+                    Yup.object().shape({
+                        name: Yup.string().required('*Field is required'),
+                        email: Yup.string().email('Invalid Email').required('*Field is required'),
+                        age: Yup.number().required('*Field is required'),
+                        role: Yup.string().required('*Field is required'),
+                        recommend: Yup.string().required('*Field is required'),
+                        feature: Yup.string().required('*Field is required'),
+                        improved: Yup.string().required('*Field is required'),
+                        comments: Yup.string().required('*Field is required'),
+                    })
+                }
                 validate={values => {
 
                 }}
                 onSubmit={(values, actions) => {
+                    const data: any = {
+                        name: values.name,
+                        email: values.email,
+                        age: values.age,
+                        role: values.role,
+                        recommend: values.recommend,
+                        feature: values.feature,
+                        improved: values.improved,
+                        comments: values.comments
+                    };
 
+                    console.log(data);
                 }}>
                 {formikProps => {
                     return (
-                        <form>
+                        <form onSubmit={formikProps.handleSubmit} onReset={formikProps.handleReset}>
                             <div className="Entry-field">
                                 <label className="heading" htmlFor="name">Name</label>
                                 <Field
@@ -36,6 +60,10 @@ const Form: React.FC<Props> = (props: Props) => {
                                     placeholder="Enter your Name"
                                     id="name"
                                     className="Input-field"
+                                />
+                                <ErrorMessage
+                                    name="name"
+                                    render={msg => <div className="Error-message">{msg}</div>}
                                 />
                             </div>
 
@@ -48,6 +76,10 @@ const Form: React.FC<Props> = (props: Props) => {
                                     id="email"
                                     className="Input-field"
                                 />
+                                <ErrorMessage
+                                    name="email"
+                                    render={msg => <div className="Error-message">{msg}</div>}
+                                />
                             </div>
 
                             <div className="Entry-field">
@@ -59,6 +91,11 @@ const Form: React.FC<Props> = (props: Props) => {
                                     id="age"
                                     className="Input-field"
                                 />
+                                <ErrorMessage
+                                    name="age"
+                                    render={msg => <div className="Error-message">{msg}</div>}
+                                />
+                                <ErrorMessage name="age" className="Error-message"/>
                             </div>
 
                             <div className="Entry-field">
@@ -74,7 +111,6 @@ const Form: React.FC<Props> = (props: Props) => {
                                     className="Input-field Dropdown">
                                     <option
                                         disabled
-                                        selected
                                         value=""
                                         className="Dropdown-option">
                                         Select current Role
@@ -105,6 +141,10 @@ const Form: React.FC<Props> = (props: Props) => {
                                         Other
                                     </option>
                                 </Field>
+                                <ErrorMessage
+                                    name="role"
+                                    render={msg => <div className="Error-message">{msg}</div>}
+                                />
                             </div>
 
                             <div className="Entry-field">
@@ -124,6 +164,10 @@ const Form: React.FC<Props> = (props: Props) => {
                                     <Field type="radio" name="recommend" id="not-sure" value="Not Sure"/>
                                     <label className="radio-option" htmlFor="not-sure">Not Sure</label>
                                 </div>
+                                <ErrorMessage
+                                    name="recommend"
+                                    render={msg => <div className="Error-message">{msg}</div>}
+                                />
                             </div>
 
                             <div className="Entry-field">
@@ -139,10 +183,9 @@ const Form: React.FC<Props> = (props: Props) => {
                                     className="Input-field Dropdown">
                                     <option
                                         disabled
-                                        selected
                                         value=""
                                         className="Dropdown-option">
-                                        Select current Role
+                                        Select current Feature
                                     </option>
                                     <option
                                         value="Challenges"
@@ -165,6 +208,10 @@ const Form: React.FC<Props> = (props: Props) => {
                                         Open Source
                                     </option>
                                 </Field>
+                                <ErrorMessage
+                                    name="feature"
+                                    render={msg => <div className="Error-message">{msg}</div>}
+                                />
                             </div>
 
                             <div className="Entry-field">
@@ -227,6 +274,11 @@ const Form: React.FC<Props> = (props: Props) => {
                                     <Field type="checkbox" name="improved" id="additional" value="Additional Courses"/>
                                     <label className="radio-option" htmlFor="additional">Additional Courses</label>
                                 </div>
+
+                                <ErrorMessage
+                                    name="improved"
+                                    render={msg => <div className="Error-message">{msg}</div>}
+                                />
                             </div>
 
                             <div className="Entry-field">
@@ -234,14 +286,19 @@ const Form: React.FC<Props> = (props: Props) => {
                                 <Field
                                     component="textarea"
                                     name="comments"
-                                    rows={5}
-                                    cols={40}
+                                    rows={6}
+                                    cols={74}
                                     placeholder="Enter your comments here..."
                                     id="comments"
-                                    className="Input-field Textarea"
+                                    className="Textarea"
+                                />
+                                <ErrorMessage
+                                    name="comments"
+                                    render={msg => <div className="Error-message">{msg}</div>}
                                 />
                             </div>
 
+                            <button type="submit" disabled={formikProps.isSubmitting} className="btn-submit">Submit</button>
                         </form>
                     );
                 }}

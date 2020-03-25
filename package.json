@@ -2,6 +2,7 @@
   "name": "react-complete-form",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://harshguptahg007.github.io/React-Formik-Example",
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
@@ -12,6 +13,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.25",
     "@types/react-dom": "^16.9.5",
+    "@types/yup": "^0.26.33",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
     "babel-eslint": "10.1.0",
@@ -71,7 +73,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -142,5 +146,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

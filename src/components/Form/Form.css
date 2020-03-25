@@ -56,5 +56,23 @@
 }
 
 .Textarea {
+    padding: 8px;
+    font-size: 1.8rem;
+    border: 1px solid #eeeeee;
+    color: rgba(0,0,0,0.6);
+}
 
+.Error-message {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: red;
+}
+
+.btn-submit {
+    width: 70rem;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    color: white;
+    border: 0;
+    background-color: #00C167;
 }
